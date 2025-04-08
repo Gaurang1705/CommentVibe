@@ -5,7 +5,7 @@ const cheerio = require('cheerio');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 const fs = require('fs');
 const path = require('path');
-const process = process.env.PORT || 3000
+const PORT = 3000
 
 const app = express();
 

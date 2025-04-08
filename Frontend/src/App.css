@@ -11,6 +11,7 @@
 html {
   font-size: 62.5%;
   font-family: "urbanist";
+  scroll-behavior: smooth;
 }
 
 body {
@@ -60,7 +61,7 @@ button {
   outline: none;
   border: none;
   text-transform: unset;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
   background: #202020;
   color: #fff;
   border-radius: 1.5rem;
@@ -72,6 +73,10 @@ button {
   -ms-border-radius: 1.5rem;
   -o-border-radius: 1.5rem;
   margin-top: 1.6rem;
+}
+
+button:hover {
+  transform: scale(1.05);
 }
 
 /* Layout  */
@@ -306,6 +311,36 @@ nav ul {
   color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
   max-width: 470px;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  margin-top: 1.6rem;
+}
+
+.icon-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-link:hover {
+  color: #4caf50; /* Green for hover effect */
+  transform: scale(1.2);
+}
+
+.icon {
+  font-size: 2.4rem;
+}
+
+.linkedin-icon {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+.github-icon {
+  color: #333; /* GitHub black */
 }
 
 /* footer CSS  */
