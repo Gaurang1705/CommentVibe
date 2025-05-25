@@ -165,12 +165,6 @@ See the [About](src/pages/About.jsx) page for team details.
 
 ---
 
-## 📄 License
-
-MIT License
-
----
-
 ## 🙏 Acknowledgements
 
 - [React](https://react.dev/)
