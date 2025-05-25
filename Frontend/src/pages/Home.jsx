@@ -1,20 +1,13 @@
 import { FaLongArrowAltRight } from "react-icons/fa";
-import { useRef, useState, useEffect } from "react";
-import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
- 
+  const navigate = useNavigate();
 
-  // Reference to the sentiment section for smooth scrolling
-  const sentimentRef = useRef(null);
-
-  // Function to scroll to sentiment section
-  const scrollToSentiment = () => {
-    sentimentRef.current?.scrollIntoView({ behavior: "smooth" });
+  // Function to navigate to the Analyze page
+  const goToAnalyze = () => {
+    navigate("/analyze"); // Redirects to the Analyze page
   };
-
-  // Function to handle the sentiment input change (for other parts of the app)
- 
 
   return (
     <main className="hero-section-main">
@@ -26,7 +19,7 @@ export const Home = () => {
           <p className="paragraph">
             Uncover the true sentiment behind every comment with our advanced AI-powered sentiment analyzer. Whether it's positive, negative, or neutral, our tool helps you gain valuable insights from social media conversations. Analyze trends, understand audience emotions, and get suggestions on how to enhance your content. Join us in turning feedback into actionable intelligence!
           </p>
-          <button className="btn btn-darken btn-inline bg-white-box" onClick={scrollToSentiment}>
+          <button className="btn btn-darken btn-inline bg-white-box" onClick={goToAnalyze}>
             Get Started <FaLongArrowAltRight />
           </button>
         </div>
@@ -42,9 +35,6 @@ export const Home = () => {
           />
         </div>
       </div>
-
-      {/* Sentiment Section */}
-     
     </main>
   );
 };

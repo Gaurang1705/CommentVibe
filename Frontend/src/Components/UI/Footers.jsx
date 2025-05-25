@@ -1,13 +1,12 @@
 import footerContact from "../../api/footerData.json";
-import { IoCallSharp } from "react-icons/io5";
 import { MdPlace } from "react-icons/md";
 import { TbMailPlus } from "react-icons/tb";
-
+import { FaTools } from "react-icons/fa"; // New icon for "Built By"
 
 export const Footers = () => {
   const footerIcon = {
     MdPlace: <MdPlace />,
-    IoCallSharp: <IoCallSharp />,
+    FaTools: <FaTools />, // Icon for "Built By"
     TbMailPlus: <TbMailPlus />,
   };
 
@@ -15,14 +14,11 @@ export const Footers = () => {
     <footer className="footer-section">
       <div className="container grid grid-three-cols">
         {footerContact.map((curData, index) => {
-          const { icon, title, details } = curData;
+          const { icon, details } = curData;
           return (
             <div className="footer-contact" key={index}>
               <div className="icon">{footerIcon[icon]}</div>
-              <div className="footer-contact-text">
-                <p>{title}</p>
-                <p>{details}</p>
-              </div>
+              <p className="footer-contact-details">{details}</p>
             </div>
           );
         })}

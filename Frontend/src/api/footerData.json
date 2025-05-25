@@ -1,17 +1,14 @@
 [
-    {
-      "icon": "MdPlace",
-      "title": "Find us",
-      "details": "Kanpur, Uttar Pradesh"
-    },
-    {
-      "icon": "IoCallSharp",
-      "title": "Call us",
-      "details": "+91"
-    },
-    {
-      "icon": "TbMailPlus",
-      "title": "Mail us",
-      "details": "contact@kodyfier.com"
-    }
-  ]
+  {
+    "icon": "MdPlace",
+    "details": "Kanpur, India"
+  },
+  {
+    "icon": "FaTools",
+    "details": "CommentVibe Team"
+  },
+  {
+    "icon": "TbMailPlus",
+    "details": "CommentVibe@proton.me"
+  }
+]
